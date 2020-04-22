@@ -3,20 +3,27 @@
 > 在vue项目中通过点击两次鼠标形成一条直线的demo
 > [demo演示](https://blog.nianzx.com/vue-lineJs/dist/index.html)
 
-## Build Setup
+## 如果在自己项目中使用
 
-``` bash
-# install dependencies
-npm install
+1.复制plugins/lineJs文件夹到自己的项目
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+2.在要使用的地方引入插件(也可以在main里全局注册)
+```
+//引入插件
+import Vue from "vue";
+import LineJs from "@/../plugins/lineJs/LineJs";
+Vue.use(LineJs);
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+3.调用方法划线删除（具体使用可以参考App.vue）
+```
+//划线
+this.$lineJs.drawLine(target, data);
+//删除单根线
+this.$lineJs.closeLine(lineId);
+//删除所有线
+this.$lineJs.closeAll();
+```
+
+
+
