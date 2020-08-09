@@ -18,6 +18,7 @@ import Vue from "vue";
 import LineJs from "@/../plugins/lineJs/LineJs";
 Vue.use(LineJs);
 
+
 export default {
   data() {
     return {
@@ -87,4 +88,5 @@ export default {
   }
 };
 </script>
+
 
