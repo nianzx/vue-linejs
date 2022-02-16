@@ -1,7 +1,7 @@
 # line-demo
 
 > 在vue项目中通过点击两次鼠标形成一条直线的demo
-> [demo演示](https://blog.nianzx.com/vue-linejs/dist/index.html)
+> [demo演示](https://nianzx.github.io/vue-linejs/dist/index.html)
 
 ## 如果在自己项目中使用
 
